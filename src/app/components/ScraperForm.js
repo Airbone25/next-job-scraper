@@ -6,7 +6,22 @@ const supportedHosts = [
   'www.linkedin.com',
   'www.indeed.com',
   'internshala.com',
+<<<<<<< HEAD:src/app/components/ScraperForm.jsx
   'www.foundit.in'
+=======
+  'www.foundit.in',
+  'www.naukri.com',
+  'www.shine.com',
+  'www.timesjobs.com',
+  'www.hirect.in',
+  'www.instahyre.com',
+  'www.quikr.com',
+  'www.freshersworld.com',
+  'www.jobsora.com',
+  'www.jobsforher.com',
+  'www.apna.co',
+  'www.workindia.in'
+>>>>>>> f7c69cd8c6792c17fc0e04ee6f2d787f46c958a8:src/app/components/ScraperForm.js
 ];
 
 export default function ScraperForm({ onScrape }) {
@@ -49,7 +64,7 @@ export default function ScraperForm({ onScrape }) {
         <div className="flex-1 relative">
           <input
             type="url"
-            placeholder="Enter job board URL (e.g., https://www.linkedin.com/jobs)"
+            placeholder="Enter job board URL"
             value={url}
             onChange={(e) => {
               setUrl(e.target.value);
